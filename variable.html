@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(number2);
+
+        // let number = 1; //number = 1 대입연산자 // 넘버사용하지 않아서 선언할 수 없음
+        // console.log(number);
+        // number = 2; //number = 2 덮어써짐
+        // number = 3; //number = 3 컴퓨터가 읽을때는 오른쪽->왼쪽 순서
+        
+        // var number2 = 2; 
+        // console.log(number2);
+
+        // const number3 = 10;
+        // number3 = 100;
+
+        // let studentCount = 1; //합성어 처음소문자, 뒷대문자 시작. 카멜표기법 귀여웡
+
+        
+        
+        // // //원시형 데이터 타입
+
+        // // 1. 숫자형 - 변수에 숫자가 들어가는 경우 자바에서는 int형 자.스에서는 필요없음 넣는거에 따라 성질바뀜
+        // let num = 1;
+        // let num2 = 2;
+        // console.log(typeof num); //무슨 타입인지 확인해줌
+        // // let num =2; //변수 이름 이렇게 같으면 안됨. let은 성질임. 
+
+        // // 2. 문자형 - 변수에 문자가 들어가는 경우         // 자스에서는 '' ""같음. 
+        // let str = 'javascript';
+        // let str2 = "javascript";
+        // // let str3 = "12345"; //문자임! 변수따라가 
+
+        // console.log(typeof str);
+        // // 3. 불리언(bool) - true/ false존재, 참 거짓을 판단할 때 사용 
+        // let bool = true; //참
+        // bool = false; //거짓
+        // console.log(typeof bool);
+        // // 4. 심볼 - skip
+        // // 5. null -빈 값(변수를 초기화 하지 않았다.) 0과는 다름. 0은 데이터임. null은 쓰레기값 object는 객체
+        // let variable = null;
+        // console.log(variable);
+        // // 6. undefined - 변수 자체가 아예 선언되지 않았다.
+        // console.log(data);
+
+        // 7. NaN - not a number. 데이터변환할 때 씀. 독자적으로는 못 씀. 문자 -> 숫자로 바꾸는데, 숫자 외 다른 문자가 있을 때 나타내는 뜻
+
+        // 참조형 데이터 타입(1-7 나머지 다) 메모리 주소 찾아가서 데이터 찾아옴
+        // let aaa = 0x1112;
+
+
+        // var는 잘 안씀. 호이스팅. 변수를 위에서 먼저해도 쓸 수 있음
+        // 변수사용가능범위 달라짐 let<<var 
+        // 변수초기화-최초데이터입력
+        // const는 한번쓰고 안 쓸 애 한테만 써 
+        // 효율성, 재사용성 중요 
+        // 변수는 소문자시작 중요
+
+        //자료형 변환
+        //문자 - > 숫자로 변환
+        let str3 = "12345aaa";
+        let str4 = "123.123";
+
+        console.log(typeof str3);
+        //1.Number() - 소수점까지 포함해서 데이터를 변환, 숫자에 문자가 포함되어 있으면 숫자가 안 됨.
+        let num3 = Number(str3);
+
+        console.log(typeof num3);
+        console.log(num3);
+
+        let num5 = Number(str4);
+
+        console.log(num5);
+
+        //data 출력하면 NaN뜸. 숫자로 바꾸긴 했는데 문자가 있어서 그 안에 데이터 출력하면 숫자 아니라 알려줌
+        //2.parseInt() - 숫자외에꺼는 빼고 출력해줌. 소수점을 제외하고 정수만 변환, 숫자에 문자가 포홤되어 있으면 문자 빼고 숫자로 변환
+       
+        let num4 = parseInt(str3);
+        console.log(parseFloat(str4)); 
+        // = let num6 = parseInt(str4); console.log(num6); 참고용 소수점을 가진 문자를 실수형으로 변환할때 사용
+
+        console.log(num4)
+
+        let num6 = parseInt(str4);
+
+        console.log(num6);
+
+        //숫자 -> 문자로 변환
+        // 1. toString()
+
+        // num4 = null;
+        let str5 = num4.toString();
+        console.log(typeof str5);
+        console.log(str5);
+
+        // 2. String() <- 이거를 많이 쓸 듯 
+        
+        num4 = null;
+        let str6 = String(num4);
+        console.log(typeof str6);
+        console.log(str6);
+
+        //빈 문자열
+        //문자, 문자열 
+        //문자 = 'A'
+        //문자열 = "ASDFG"
+        let str7 = '';
+
+    </script>
+</body>
+</html>

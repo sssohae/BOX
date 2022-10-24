@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 산술 연산자: + - / * % ++, --, +=, -=, /=...
+        let sum = 10 + 10; //result : 20
+        let sub = 20 - 10; //result : 10
+
+        let div = 50 / 5; //result : 10 몫
+        let num = 50 % 5; //result : 0 나머지. 많이 쓰임!!!
+        
+        let sup = 20 * 30; //result : 600
+
+        //++
+        let num7 = 1;
+        
+        console.log(num7++); //result : 1 문장을 실행 완료하고 나서 num7 = num + 1;
+        console.log(++num7); //result : 3 문장을 실행 하기 전에 num 7 = num7 + 1;
+
+        //--
+        console.log(num7--); //result : 3, 문장을 실행 완료하고 나서 num7 = num - 1;
+        console.log(--num7); //result : 1, 문장을 실행 하기 전에 num 7 = num7 - 1;
+
+        //+=, -=, /=....
+        //+=
+
+        num7 = num7 + 7;
+        num7 += 7;
+
+        num7 = num7 -5;
+        num7 -= 5;
+
+        num7 = num7 / 5;
+        num7 /= 5;
+
+
+
+
+
+        //2. 비교 연산자:  == != === > < >= =<
+        // = 대입 연산자, 우변의 데이터를 좌변의 변수에 넣어주는 역할
+        let firstNum = 1;
+        let secondNum = 2;
+
+        console.log(firstNum == secondNum); //result : false
+        console.log(firstNum != secondNum); //result : true
+        console.log(firstNum === secondNum); //result : false
+
+        console.log(1 === 1); //reault : true
+        console.log("yedam" === "yedam"); //result : true
+        console.log(Number("12") === Number ("12"));
+
+        console.log(firstNum > secondNum); //result : false
+        console.log(firstNum < secondNum); // result : true
+        console.log(firstNum >= secondNum); // result : false
+        console.log(firstNum <= secondNum); //result : true
+
+        //3. 논리 연산자: &&, ||, 삼항 연산자 
+        // && = AND
+        // || = OR
+
+        console.log( true && true ); 
+
+        console.log(firstNum < secondNum && firstNum >= secondNum); //result : false
+        console.log(firstNum < secondNum || firstNum >= secondNum); //result : true
+        
+
+        //4. 문자열 연산자: +, +=
+
+        console.log("yedam" + "javascript");
+        
+        let str8 = "yedam";
+        //str8 = str8 + "5F";
+        str8 += " 5F" //문자열은 띄어쓰기 포함됨. 안에 존재하는 모든 것 포함 특문 
+
+        console.log(str8)
+
+        //5. 부정 연산자: ! -> not
+
+        console.log(!true);
+        console.log(!false);
+    </script>
+</body>
+</html>
