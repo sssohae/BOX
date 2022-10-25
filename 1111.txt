@@ -1,0 +1,27 @@
+1)최초에 처음 받을 때
+-git clone 주소
+
+2)두번째부터 받을 때 내일 
+-git pull 
+
+
+1)git init : git 초기화 
+2)git remot add origin 주소
+ ->내 폴더와 github repository 연결
+3)git add * 혹은 낸가 원하느 ㄴ파일 입력
+4)git commit -m '내가 쓰고 싶은 말'
+5)Error -> 누가 올리는지 등록 
+= 최초 한번만 진행
+6)git config --global user.email
+7)git config --globlal user.name
+
+8)git commit -m '내가 쓰고 싶은 말'
+9)git branch -M main
+10)git push -u origin main
+11)github login, auth
+12)정상 upload 완료 
+--------------------------------
+처음 git clone 이후 내려 받을 때
+가정 : github repository가 파일이 있어야함
+1)git clone 하고 주소쓰면 됨  
+2)git pull origin main -- 변경된것만 받기 
