@@ -51,7 +51,51 @@
 
         // cal(3,4);
 
+        //음수 양수 확인하기
+        function judgement (x){
+            // let str = "";
+            // if x<0{
+            //     str += "음수입니다."
+            // } else{
+            //     str += "음수입니다."
+            // }
+            // return str;
+            //삼한 연산자를 활용한 함수 
 
+            return x < 0 ? "음수입니다." : "양수입니다.";
+        }
+
+        let judg = judgement(-2);
+        console.log(judg)
+
+        //합계 구하기
+        //내가 입력한 수에 대한 덧셈
+        //예를 들어 10 -> 1~10 더하는 함수
+        //함수 안에 반복문 사용 가능
+        function sum(x){
+            let inputSum = 0;
+            for(let i=1; i<=x; i++){
+            inputSum = inputSum + i;
+            }
+            //다른 함수 호출 가능
+            let num = judgement(1);
+            console.log(num)
+            return inputSum;
+        }
+        let input = sum(1000);
+        console.log(input);
+
+        //구구단
+
+        function gugudan(x){
+
+            for(let i =1; i<=9; i++){
+                console.log(x + "*" + i + "=" + (x*i));
+            }
+        }
+        gugudan(3);
+
+        
     </script>
 </body>
 </html>
