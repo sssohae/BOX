@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //합수
+        //함수의 형태
+        //function 함수명(){
+
+        // }
+
+        // 계산기
+
+
+        //변수 scope
+        function cal(x,y){ //매개변수 
+            //더하기 기능만 가진 계산기
+            //2개의 인자만 계산하는 계산기
+            let result = x + y;
+            // console.log(result);
+            return result;
+        }
+        let total = cal(1,2);
+        console.log(total);
+
+        //사칙연산이 가능한 계산기 
+        function calculator(num1, num2, sp){ //3개의 매개변수, num1과 num2는 계산할 데이터
+                                            //sp 덧셈인지, 빼렘인지, 곱, 나눗셈인지 확인할 수 있는 데이터
+                let result = 0;                         
+                if(sp == "+"){
+                    result = num1 + num2;
+                }else if(sp =="-"){
+                    result = num1 - num2;
+                }else if(sp =="*"){
+                    result = num1 * num2;
+                }else if(sp =="/"){
+                    result = num1 / num2;
+                }
+                return result;
+        }
+
+        total = calculator(310, 31 ,"-");
+        console.log(total);
+
+        // cal(1,2);
+
+        // cal(3,4);
+
+
+    </script>
+</body>
+</html>

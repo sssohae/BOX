@@ -55,12 +55,18 @@
         //예를 들면 1~20 -> 1,2,*,4,5,*,7,8,*,10,11,12,1*,14,15,1*....20
         
         
-        // let num = Number(prompt("숫자를 입력하세요."));
+        let num = Number(prompt("숫자를 입력하세요."));
         
-        // for(let i = 1; i<=num; i++){
-        //     //lastIndexOf
+        for(let i = 1; i<=num; i++){
+            //lastIndexOf
 
-        //     let temp = String(i);
+            let temp = String(i);
+            if(temp.endsWith('3') || temp.endsWith('6') ||temp.endsWith('3')){
+                temp = temp.substring(0,temp.length-1);
+                temp +="*";
+            }
+            console.log(temp);
+
         //     let str;
         //     console.log(temp.lastIndexOf)
         //     //false = -1
@@ -76,9 +82,6 @@
         //     console.log(str2);
         // }
         
-
-
-
         // console.log(*);
 
 
