@@ -1,0 +1,24 @@
+1) git init : git 초기화
+2) git remote add origin 주소
+   -> 내 폴더와 github repository 연결
+3) git add * 혹은 내가 원하는 파일 입력
+4) git commit -m '내가 쓰고 싶은 말'
+5) Error -> 누가 올리는지 등록
+   - 최초 한번만 진행
+6) git config --global user.email
+7) git config --global user.name
+
+8) git commit -m '내가 쓰고 싶은 말'
+9) git branch -M main
+10) git push -u origin main
+11) github login, auth
+12) 정상 upload 완료
+
+----------------------------------
+가정 : github repository가 파일이 있어야함.
+처음 git 내려 받을 때
+
+1) git clone 주소
+
+
+
