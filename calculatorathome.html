@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"> inch<br>
+    <br>
+    <button type="button" id="cal">계산</button>
+    <button type="button" id="total">이력</button>
+    
+    <p id="p"></p>
+
+
+    <script>
+        //inch -> cm로 변환하는 계산기
+        //계산 버튼을 누르게 되면 inch->cm로 변환
+        //이력 버튼을 누르게 되면 변환 했던 이력들을 출력
+        //inch -> cm로 변환하는 공식 : inch * 2.54
+        //데이터가 입력되지 않으면 알림창 발생 할 것.
+        //예시 ) input 에 10을 입력하고 계산 버튼을 누르면 p 태그에 결과 값이 출력되면 됨.
+        //예시 ) 이력 버튼을 누르면 변환 했던 내용들이 p 태그에 결과 값이 출력되면 됨.
+        //참고 ) 결과 사진 첨부
+    
+        let input = document.querySelector('input');
+        input.addEventListener('submit',fncI);
+        let cal = document.getElementById('cal');
+        cal.addEventListener('click',fncC);
+        let total = document.getElementById('total');
+        total.addEventListener('click', fncT);
+        let p = document.getElementById('p');
+        //id 안 붙이고는 p를 못 찾았음 
+
+        let array =[];
+
+        function fncI(){
+            let input = document.getElementById('input');
+            input.submit();
+        } //있어야 하는지 모르겠음. 기능이 뭔지. 수업내용 찾다가 그냥 넣어봄
+
+        function fncC(){
+        let input = document.querySelector('input');
+           if(input.value == ''){
+            alert("숫자를 입력하세요.");
+            return false;
+        } 
+
+        let result =(input.value)*2.54+"cm";
+        array.push(result);
+         p.innerHTML = result;
+            return true;
+        }
+
+
+        function fncT(){
+            // let atyspl = array.splice()
+            p.innerHTML = "이력 출력 : " + array;
+        }
+
+
+        //Q1. <p>가 안 찾아져서 id붙여서 찾음 Q2. 이력 출력에 콤마 있음
+        //Q3. split(',')로 가능한지 ?
+
+        
+    //         let array=[result];
+    //    for(temp of array)
+    //         console.log(temp);
+    //     }
+
+
+        // function fncT(){
+        //     ary.
+        // }
+
+
+        // cal.onclick = function(){
+        //     if(input.value == ''){
+        // alert("숫자를 입력하세요.");
+        // }
+        // p.write("<input * 2.54>" + "cm");
+        // }
+
+ 
+
+    
+
+        
+
+
+    //     // alert("숫자를 입력하세요.")
+
+    //     // 이력 출력 + 
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
