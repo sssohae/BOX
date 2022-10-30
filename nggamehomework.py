@@ -35,10 +35,10 @@ ran = randint(1,100)
 cnt = 0
 arr = []
 
+print("Enter a guess")
 while cnt < 10 : 
     cnt += 1
 
-    print("Enter a guess")
     n = input()
     n = int(n)
 
