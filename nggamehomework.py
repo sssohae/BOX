@@ -23,40 +23,46 @@
 4. 끝나면 다시 할 지 물어보기  -->이것만 하면 끝~~~~~~~~~~~
 
 한번 끝내면 cnt 1되고 1 이상 and input yes 일때까지 돌린다.
-
+while 안에 또 넣기 
 
 
 '''
+
+
 
 from random import randint
 
 ran = randint(1,100)
 
-cnt = 0
-arr = []
+while True:
+    cnt = 0
+    arr = []
 
-print("Enter a guess")
-while cnt < 10 : 
-    cnt += 1
+    print("Enter a guess")
+    while cnt < 10 : 
+        cnt += 1
 
-    n = input()
-    n = int(n)
+        n = input()
+        n = int(n)
 
-    arr.append(n)
-    print(arr)
+        arr.append(n)
+        print(arr)
+        
+        if ran == n :
+            print("Congratulations! You got it right\n")
+            quit() 
+        
+        elif n < ran :
+            print("Wrong! Last guess was too low!\n")
+
+        elif n > ran :
+            print("Wrong! Last guess was too high!\n")
+
+    print("!!!GAME OVER!!!")
+    exitYn = input("게임을 계속할까요? Y, N")
+    if exitYn in['Y','N'] :
+        quit()
     
-    if ran == n :
-        print("Congratulations! You got it right\n")
-        quit() 
-    
-    elif n < ran :
-        print("Wrong! Last guess was too low!\n")
 
-    elif n > ran :
-        print("Wrong! Last guess was too high!\n")
-
-print("!!!GAME OVER!!!")
-quit()
-
-# Q1. while cnt <=10 이나 cnt <11로 하면 11번까지 시행됨. 10번까지만 돼야하는게 아닌가?? -> A1. while을 넘어가서 cont돼서 그럼 
-# Q2. 사용자input n도 int 꼭 해줘야 하는가? A2. 해줘야함. 교수님도 해줬음 
+    # Q1. while cnt <=10 이나 cnt <11로 하면 11번까지 시행됨. 10번까지만 돼야하는게 아닌가?? -> A1. while을 넘어가서 cont돼서 그럼 
+    # Q2. 사용자input n도 int 꼭 해줘야 하는가? A2. 해줘야함. 교수님도 해줬음 
