@@ -1,0 +1,48 @@
+json : java script object notation 
+
+
+arr = ['바나나', '키위']
+arr[0]
+
+info = { 'name':'choi', 'age':20 }
+info.name info['name']  
+
+list[]
+dictionary(object){}
+
+for : 반복횟수 알 수 있을 때
+while : 알 수 없을 때 . 조건이 맞을 때 
+
+for(i=0; i<10; i+=2)
+range(0,10,2)
+range(10)
+range(1,10)
+
+
++ 20221101 python
+
+var : 함수 단위
+let : 블록{}단위
+생략하면 전역변수가 됨(주의)
+
+
+		js	python
+가변인수:		...	*
+
+sum(4,5,6)
+sum(4,5,)
+sum(4,5,6,7,8,9,10)
+
+
+11021	A+B - 7
+4101	크냐?
+1789	수들의 합
+2754	학점계산
+-----------------------
+10797	10부제
+5565	영수증
+10984	내 학점을 구해줘
+2576	홀수
+9085	더하기
+
+user_manage.py에 파일입출력기능 추가 
