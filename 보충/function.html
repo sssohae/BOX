@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function.html</title>
+</head>
+<body>
+    <input id="num">
+    <button type="button" onclick="sum(num.value)">합계</button>
+    <!-- 아이디 값으로 되는거 보기  -->
+    <script>
+        let total = 0
+        function sum(n){
+            total = 0;
+            for(i=0;i<=n;i++){
+                total += i
+            }
+            console.log(total)
+        }
+        
+
+    </script>
+</body>
+</html>
